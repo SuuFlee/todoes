@@ -59,7 +59,7 @@ export const useStore = create((set, get) => ({
     });
   },
   removeTodo: () => set({ count: [] }),
-
+// todo
   handleKeyDown: (event) => {
     if (event.key === "Enter") {
       const { newTodo } = get();
