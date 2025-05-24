@@ -26,15 +26,7 @@ function App() {
   const handleOnSubmit = (e) => {
         console.log(count)
         e.preventDefault();
-        emailjs.send(SERVICE_ID, TEMPLATE_ID, {message: formatTodoList(count)}, PUBLIC_KEY)
-          .then((result) => {
-            alert('Message Sent Successfully')
-          }, (error) => {
-            console.log(error.text);
-            alert('Something went wrong!')
-          });
-        
-      };
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, {message: formatTodoList(count)}, PUBLIC_KEY)};
       
 
       
